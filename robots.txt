@@ -1,0 +1,73 @@
+# ========================
+# General Rules for All Bots
+# ========================
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /wp_block/
+Disallow: /category/
+Disallow: /wp-includes/
+Disallow: /*.pdf$
+
+# ========================
+# Allow AI-related Crawlers
+# ========================
+
+# OpenAI - GPTBot
+User-agent: GPTBot
+Allow: /
+
+# ChatGPT browsing agent (used when users browse with ChatGPT)
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Google's AI crawling control
+User-agent: Google-Extended
+Allow: /
+
+# ========================
+# Block Known Bad Bots
+# ========================
+
+# Cá»‘c Cá»‘c
+User-agent: coccocbot
+Disallow: /
+
+User-agent: coccocbot-web
+Disallow: /
+
+User-agent: coccocbot-image
+Disallow: /
+
+# Yandex
+User-agent: Yandex
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: YandexCalendar
+Disallow: /
+
+User-agent: YandexMobileBot
+Disallow: /
+
+# ========================
+# Sitemap
+# ========================
+Sitemap: https://aoexperiences.com/sitemap.xml
